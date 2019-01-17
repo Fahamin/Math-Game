@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/addID"
+        android:icon="@drawable/addd"
+        android:title="ADD"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/DivID"
+        android:icon="@drawable/divid"
+        android:title="DIV"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/subID"
+        android:icon="@drawable/minus"
+        android:title="SUB"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/mulID"
+        android:icon="@drawable/multiplication"
+        android:title="MUL"
+        app:showAsAction="always"></item>
+</menu>
