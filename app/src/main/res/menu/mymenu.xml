@@ -22,4 +22,5 @@
         android:icon="@drawable/multiplication"
         android:title="MUL"
         app:showAsAction="always"></item>
+
 </menu>

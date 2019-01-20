@@ -10,9 +10,14 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -32,13 +37,20 @@ public class MainActivity extends AppCompatActivity {
 
     int sing = 0;
 
+    AdView adView;
     @SuppressLint("WrongViewCast")
     @Override
 
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_main);
+
+
         result = findViewById(R.id.reslutTV);
         timerTV = findViewById(R.id.timeID);
         scoreDIV = findViewById(R.id.dividerMath);
@@ -51,6 +63,9 @@ public class MainActivity extends AppCompatActivity {
         singID = findViewById(R.id.singID);
         generateAnswer();
 
+        adView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
         soundYes = MediaPlayer.create(MainActivity.this, R.raw.yes);
         countDownTimer = new CountDownTimer(31000, 1000) {
@@ -207,7 +222,6 @@ public class MainActivity extends AppCompatActivity {
             if (s1.equals(String.valueOf(answer.get(locationOffCorrectanswer)))) {
                 score+=100;
                 soundYes.start();
-
                 result.setText(" Correct");
             } else {
                 result.setText(" incorrect");

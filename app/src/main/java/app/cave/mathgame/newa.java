@@ -18,6 +18,7 @@ public class newa extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_newa);
+
         MediaPlayer soundYes = MediaPlayer.create(this, R.raw.yes);
         soundYes.start();
 
@@ -31,6 +32,7 @@ public class newa extends AppCompatActivity {
             @Override
             public void run() {
                 startActivity(new Intent(newa.this,MainActivity.class));
+                finish();
             }
         }, 3000);
 
