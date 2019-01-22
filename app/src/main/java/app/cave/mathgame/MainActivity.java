@@ -63,9 +63,9 @@ public class MainActivity extends AppCompatActivity {
         singID = findViewById(R.id.singID);
         generateAnswer();
 
-        adView = findViewById(R.id.adView);
+       /* adView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
+        adView.loadAd(adRequest);*/
 
         soundYes = MediaPlayer.create(MainActivity.this, R.raw.yes);
         countDownTimer = new CountDownTimer(31000, 1000) {
