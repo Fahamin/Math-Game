@@ -1,6 +1,16 @@
 <resources>
-    <string name="app_name">Math Game</string>
+    <string name="app_name">ICT Number converter</string>
 
     <string name="bannerAddtest">ca-app-pub-3940256099942544/6300978111</string>
     <string name="bannerAddr">ca-app-pub-4726525166301004/2591138007</string>
+
+
+    <string-array name="numberFormat" >
+        <item>which number you input</item>
+        <item>BINARY</item>
+        <item>DECIMAL</item>
+        <item>OCTAL</item>
+        <item>HEXADECIMAL</item>
+
+    </string-array>
 </resources>

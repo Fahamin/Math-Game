@@ -19,8 +19,7 @@ public class newa extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_newa);
 
-        MediaPlayer soundYes = MediaPlayer.create(this, R.raw.yes);
-        soundYes.start();
+
 
         ActionBar actionBar =getSupportActionBar();
 

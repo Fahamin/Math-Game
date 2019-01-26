@@ -51,7 +51,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="scalingPercent" value="80" />
+                                                <entry key="scalingPercent" value="69" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -61,10 +61,10 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="backgroundLayerName" value="ic_launch" />
-                                      <entry key="foregroundImage" value="C:\Users\Administrator\Downloads\iconm.png" />
-                                      <entry key="foregroundLayerName" value="ic_launc" />
-                                      <entry key="outputName" value="iconnew" />
+                                      <entry key="backgroundLayerName" value="ic_launchuu" />
+                                      <entry key="foregroundImage" value="D:\new app\MathGame\logo\iconnum.png" />
+                                      <entry key="foregroundLayerName" value="ic_launch" />
+                                      <entry key="outputName" value="icon" />
                                     </map>
                                   </option>
                                 </PersistentState>
